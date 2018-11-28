@@ -17,7 +17,7 @@ import service from '~/service/index'
 export default {
   async asyncData ({store}) {
     await store.dispatch('getHotPages')
-    return { title: store.state.hotpages[0].attributes.description }
+    return { title: store.state.hotpages.blocks[0].title }
   },
   data() {
     return {
