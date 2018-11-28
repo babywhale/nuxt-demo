@@ -13,16 +13,16 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0' },
       { hid: 'description', name: 'description', content: pkg.description },
       { hid: 'keywords', name: 'keywords', content: pkg.keywords },
-      { name: 'apple-mobile-web-app-capable' content: 'yes' },
-      { name: 'format-detection' content: 'telephone=no' },
-      { name: 'format-detection' content: 'email=no' },
-      { name: 'screen-orientation' content: 'portrait' },
-      { name: 'x5-orientation' content: 'portrait' },
-      { name: 'full-screen' content: 'yes' },
-      { name: 'x5-fullscreen' content: 'true' },
-      { name: 'browsermode' content: 'application' },
-      { name: 'x5-page-mode' content: 'app' },
-      { name: 'msapplication-tap-highlight' content: 'no' }
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'format-detection', content: 'email=no' },
+      { name: 'screen-orientation', content: 'portrait' },
+      { name: 'x5-orientation', content: 'portrait' },
+      { name: 'full-screen', content: 'yes' },
+      { name: 'x5-fullscreen', content: 'true' },
+      { name: 'browsermode', content: 'application' },
+      { name: 'x5-page-mode', content: 'app' },
+      { name: 'msapplication-tap-highlight', content: 'no' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
