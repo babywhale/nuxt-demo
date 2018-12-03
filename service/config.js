@@ -11,7 +11,7 @@ export default {
     Accept: 'application/vnd.lumendingo.v1+json.'
   },
   // 超时设置
-  timeout: 10000,
+  timeout: 600000,
   // 跨域是否带Token
   // withCredentials: true,
   // 响应的数据格式 json / blob /document /arraybuffer / text / stream
@@ -23,5 +23,5 @@ export default {
   httpsAgent: new https.Agent({
     keepAlive: true
   }),
-  baseURL: 'https://i-xapi.xinmanhua.net/'
+  baseURL: 'http://api.dev.udongman.cn:8081/api'
 }

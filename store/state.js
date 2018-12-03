@@ -1,3 +1,5 @@
 export default {
-  hotpages: null
+  hotpages: null,
+  rollings: null,
+  works: null
 }

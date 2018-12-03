@@ -85,14 +85,6 @@ export default function flexible(){
         }
     }, false);
 
-    if (doc.readyState === 'complete') {
-        doc.body.style.fontSize = 14 * dpr + 'px';
-    } else {
-        doc.addEventListener('DOMContentLoaded', function(e) {
-            doc.body.style.fontSize = 14 * dpr + 'px';
-        }, false);
-    }
-
     refreshRem();
 
 };

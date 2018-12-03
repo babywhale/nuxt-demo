@@ -1,9 +1,8 @@
 {
-  "name": "nuxt-demo3",
+  "name": "udm-m",
   "version": "1.0.0",
-  "description": "My ace Nuxt.js project",
-  "keywords": "",
-  "author": "babywhale",
+  "description": "优动漫移动端官方网站",
+  "author": "unicorn",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
@@ -17,6 +16,7 @@
     "jsonapi-datastore": "^0.4.0-beta",
     "koa": "^2.5.2",
     "nuxt": "^2.0.0",
+    "nuxt-stylus-resources-loader": "^2.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },

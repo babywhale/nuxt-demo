@@ -1,6 +1,6 @@
 import { JsonApiDataStore } from 'jsonapi-datastore'
 
-function resolveData(data, type, isSingle) {
+function resolveData(data, type, isSingle, sort) {
     if (!type) {
         return data
     }
@@ -22,4 +22,24 @@ function resolveData(data, type, isSingle) {
 
 export function setHotpages(state, payload) {
     this.state.hotpages = resolveData(payload, 'hotpages', true)
+}
+
+export function setRollings(state, payload) {
+    this.state.rollings = resolveData(payload, 'rollingGroups', true)
+}
+
+export function setWeekqas(state, payload) {
+    let newList = resolveData(payload, 'weekqaGroups', false, (a, b) => a.starttime < b.starttime ? 1 : -1)
+    if (!this.state.weekqas) {
+        this.state.weekqas = []
+    }
+    this.state.weekqas = this.state.weekqas.concat(newList)
+}
+
+export function setWorks(state, payload) {
+    let newList = resolveData(payload, 'works')
+    if (!this.state.works) {
+        this.state.works = []
+    }
+    this.state.works = this.state.works.concat(newList)
 }
